@@ -4,14 +4,18 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JPanel;
 
+import main.game.characters.Player;
+
 public class GamePanel extends JPanel {
 
-    public void keyPressed(KeyEvent e) {
-        // TODO: handle user input
+    private Player player;
+
+    public GamePanel() {
+        
     }
 
-    public void keyReleased(KeyEvent e) {
-        // TODO: handle release of user input
+    public Player getPlayer() {
+        return this.player;
     }
-    
+
 }

@@ -4,6 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import main.game.GamePanel;
+import main.game.characters.Player;
 
 public class KeyInput extends KeyAdapter{
 
@@ -15,11 +16,11 @@ public class KeyInput extends KeyAdapter{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        panel.keyPressed(e);
+        panel.getPlayer().keyPressed(e);
     }
     
     @Override
     public void keyReleased(KeyEvent e) {
-        panel.keyReleased(e);
+        panel.getPlayer().keyReleased(e);
     }
 }
